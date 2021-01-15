@@ -1,0 +1,92 @@
+body{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #030239;
+}
+.Calculatrice
+{   
+
+    position: relative;
+	left: 18%;
+	display: grid;
+}
+.Calculatrice .value
+{
+grid-column: span 4;
+height: 95px;
+text-align: right;
+border-color: blue;
+outline: none;
+padding: 10px;
+font-size: 26px;
+color: #fff;
+background-color: #0E0D0D;
+}
+.Calculatrice span
+{
+	display: grid;
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	background: #157774;
+	place-items: center;
+	font-size: 26px;
+	font-style: bold;
+	border: 3px solid rgba(0,0,0,.1);
+	border-style: inset;
+}
+
+.Calculatrice span.clear
+{
+	  grid-column: span 2;
+	  width: 166px;
+	  background: lime;
+}
+
+.Calculatrice span.plus
+{
+  grid-row: span 2;
+  height: 166px;
+  background: #0DE7E0;
+}
+.Calculatrice span.equal
+{
+  background: #0DE7E0;
+}
+.Calculatrice span.moins
+{
+  background: #0DE7E0;
+}
+.Calculatrice span.mult
+{
+	 background: #0DE7E0;
+}
+.Calculatrice span.div
+{
+	 background: #0DE7E0;
+}
+.Calculatrice span:active
+{
+	background-color:  orange;
+}
+
+.container
+{
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+.container span
+{
+	color: #fff;
+	font-size: 28px;
+	font-style: italic;
+}
+.container h1
+{
+	color: red;
+	font-style: italic;
+	font-size: 28px;
+}
